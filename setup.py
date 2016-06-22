@@ -14,7 +14,7 @@ except ImportError:
 
 setup(
     name="wheelhouse-uploader",
-    version="0.7.4",
+    version="0.9.3",
     description="Upload wheels to any cloud storage supported by Libcloud",
     maintainer="Olivier Grisel",
     maintainer_email="olivier.grisel@ensta.org",
@@ -26,6 +26,7 @@ setup(
     setup_requires=['setuptools-markdown'],
     install_requires=[
         "setuptools>=0.9",  # required for PEP 440 version parsing
+        "packaging",
         "futures",
         "apache-libcloud",
     ],
